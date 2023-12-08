@@ -65,7 +65,6 @@ in
           active_opacity = 0.8500;
           inactive_opacity = 0.76;
           blur = 1
-          blur_size = 2
           drop_shadow = 0
       }
 
