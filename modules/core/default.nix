@@ -12,7 +12,7 @@ let
   lib = nixpkgs.lib;
 in
 {
-  nixos = nixpkgs.lib.nixosSystem {
+  G14 = nixpkgs.lib.nixosSystem {
     specialArgs = { inherit self inputs; };
     modules =
       [ (import ./bootloader.nix) ]

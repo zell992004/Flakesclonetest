@@ -34,6 +34,6 @@ in
     shell = pkgs.zsh;
   };
   users.users.root.initialPassword = initialPassword;
-  # services.getty.autologinUser = "fahim";
+  # services.getty.autologinUser = "zell";
   nix.settings.allowed-users = [ "zell" ];
 }
