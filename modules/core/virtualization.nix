@@ -2,7 +2,7 @@
 
 {
   # Add user to libvirtd group
-  users.users.fahim.extraGroups = [ "libvirtd" ];
+  users.users.zell.extraGroups = [ "libvirtd" ];
 
   # Install necessary packages
   environment.systemPackages = with pkgs; [

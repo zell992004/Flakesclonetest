@@ -36,7 +36,7 @@
       profiles = {
         default = {
           id = 0;
-          name = "fahim";
+          name = "zell";
           search = {
             force = true;
             default = "Google";
