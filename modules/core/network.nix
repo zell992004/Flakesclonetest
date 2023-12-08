@@ -1,7 +1,6 @@
 { ... }: {
   networking = {
-    hostName = "nixos";
+    hostName = "G14";
     networkmanager.enable = true;
-    nameservers = [ "1.1.1.1" ];
   };
 }
