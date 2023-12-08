@@ -5,7 +5,7 @@
     videoDrivers = [ "amdgpu" ];
     displayManager.autoLogin = {
       enable = true;
-      user = "fahim";
+      user = "zell";
     };
     libinput = {
       enable = true;
