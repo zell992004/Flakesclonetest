@@ -4,7 +4,7 @@
 , inputs
 , ...
 }: {
-  #imports = [ inputs.nix-gaming.nixosModules.default ];
+  #imports = [ inputs.nix-gaming.nixosModules.default ]; #TODO check this
   nix = {
     settings = {
       auto-optimise-store = true;

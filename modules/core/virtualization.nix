@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
 {
+# TODO learn how to use
+
   # Add user to libvirtd group
   users.users.zell.extraGroups = [ "libvirtd" ];
 

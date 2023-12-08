@@ -12,6 +12,7 @@
       mouse = {
         accelProfile = "flat";
       };
+      # TODO add in gnome Desktop env
     };
   };
 }

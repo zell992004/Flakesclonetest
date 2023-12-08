@@ -10,6 +10,8 @@ let
   packages = with pkgs; [
     fish
   ];
+
+  #TODO Add Airyana
 in
 {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
