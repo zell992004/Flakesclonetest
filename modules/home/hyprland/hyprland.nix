@@ -23,7 +23,7 @@
     enable = true;
     xwayland = {
       enable = true;
-      hidpi = true;
+    #  hidpi = true;
     };
     #nvidiaPatches = false;
     systemdIntegration = true;
