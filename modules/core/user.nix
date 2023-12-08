@@ -28,7 +28,6 @@ in
 
   users.users.${username} = {
     isNormalUser = true;
-    initialPassword = initialPassword;
     description = name;
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
