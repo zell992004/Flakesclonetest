@@ -9,6 +9,8 @@ in
       $mainMod = SUPER
       monitor = ,highrr,auto,1
       monitor = ,highres,auto,1
+      #TODO setup monitor positioning
+      
 
 
       input {
@@ -95,12 +97,14 @@ in
       bind = $mainMod, J, togglesplit,
       bind = $mainMod, E, exec, thunar
       bind = $mainMod, B, exec, pkill -SIGUSR1 .waybar-wrapped
-      bind = $mainMod SHIFT, c ,exec, hyprpicker -a
+      bind = $mainMod SHIFT, h ,exec, hyprpicker -a
       bind = $mainMod, G,exec, $HOME/.local/bin/toggle_layout
       bind = $mainMod, W,exec, pkill wofi || wallpaper-picker
       bind = $mainMod, O,exec, toggle-opacity
       bind = $mainMod, A,exec, toggle-animation
       bind = $mainMod, D,exec, toggle-blur
+      bind = $mainMod, F,exec, firefox
+      bind = $mainMod SHIFT, c ,exec, code
       # screenshot
       bind = ,Print, exec, grimblast --notify --cursor save area ~/Pictures/$(date ' + %Y-%m-%d ' T '%H:%M:%S ').png
       bind = $mainMod, Print, exec, grimblast --notify --cursor  copy area
