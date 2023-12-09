@@ -4,11 +4,8 @@
     layout = "us";
     videoDrivers = [ "amdgpu" ];
     displayManager = {
+      gnome.enable = true;
       gdm.enable = true;
-      autoLogin = {
-      enable = true;
-      user = "zell";
-      };
     };
     libinput = {
       enable = true;

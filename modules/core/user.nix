@@ -7,9 +7,9 @@ let
   username = "zell";
   email = "zell992004@gmail.com";
   initialPassword = "Newcomer2023";
-  packages = with pkgs; [
-    fish
-  ];
+  #packages = with pkgs; [
+  #  fish
+  #];
 
   name2 = "Airyana Bouchard";
   username2 = "airyanna";
@@ -36,6 +36,7 @@ in
       home.homeDirectory = "/home/${username2}";
       home.stateVersion = "22.11";
       programs.home-manager.enable = true;
+      initialPassword = initialPassword;
     };
   };
 
