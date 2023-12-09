@@ -11,7 +11,7 @@ in
       monitor = ,highres,auto,1
       #TODO setup monitor positioning
       
-
+      #TODO Add swipe gesture for workspaces
 
       input {
           kb_layout = us
