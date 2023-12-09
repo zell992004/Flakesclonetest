@@ -14,9 +14,6 @@ let
   name2 = "Airyana Bouchard";
   username2 = "airyanna";
   email2 = "airyannbouchard3@gmail.com";
-  packages = with pkgs; [
-
-  ];
 
   #TODO setup home2 home-manager
 in
@@ -48,6 +45,14 @@ in
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
   };
+
+  users.users.${username2} = {
+    isNormalUser = true;
+    description = name2;
+    extraGroups = [ "networkmanager" "wheel" ];
+    shell = pkgs.zsh;
+  };
+  
   users.users.root.initialPassword = initialPassword;
   # services.getty.autologinUser = "zell";
   nix.settings.allowed-users = [ "zell" ];
