@@ -24,7 +24,7 @@ in
     useGlobalPkgs = true;
     extraSpecialArgs = { inherit inputs; };
     users.${username} = {
-      imports = [ (import ./../home2) ];
+      imports = [ (import ./../home) ];
       home.username = username;
       home.homeDirectory = "/home/${username}";
       home.stateVersion = "22.11";
