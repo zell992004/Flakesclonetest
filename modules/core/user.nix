@@ -39,20 +39,21 @@ in
     };
   };
 
-  users.users.${username} = {
+  users.users = {
+    ${username} = {
     isNormalUser = true;
     description = name;
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
-  };
-
-  users.users.${username2} = {
+    };
+    ${username2} = {
     isNormalUser = true;
     description = name2;
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
+    };
   };
-  
+
   users.users.root.initialPassword = initialPassword;
   # services.getty.autologinUser = "zell";
   nix.settings.allowed-users = [ "zell" ];
