@@ -4,7 +4,7 @@
     layout = "us";
     videoDrivers = [ "amdgpu" ];
     displayManager = {
-      gnome.enable = true;
+     # gnome.enable = true;
       gdm.enable = true;
     };
     libinput = {

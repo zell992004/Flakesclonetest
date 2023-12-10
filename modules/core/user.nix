@@ -27,17 +27,17 @@ in
       imports = [ (import ./../home) ];
       home.username = username;
       home.homeDirectory = "/home/${username}";
-      home.stateVersion = "22.11";
+      home.stateVersion = "23.11";
       programs.home-manager.enable = true;
     };
-    users.${username2} = {
-      imports = [ (import ./../home2) ];
-      home.username = username2;
-      home.homeDirectory = "/home/${username2}";
-      home.stateVersion = "22.11";
-      programs.home-manager.enable = true;
-      initialPassword = initialPassword;
-    };
+#  users.${username2} = {
+#      imports = [ (import ./../home2) ];
+#      home.username = username2;
+#      home.homeDirectory = "/home/${username2}";
+#      home.stateVersion = "22.11";
+#      programs.home-manager.enable = true;
+#      initialPassword = initialPassword;
+#    };
   };
 
   users.users = {
