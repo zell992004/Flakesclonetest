@@ -6,7 +6,6 @@ let
   name = "Peter Bouchard";
   username = "zell";
   email = "zell992004@gmail.com";
-  initialPassword = "Newcomer2023";
   #packages = with pkgs; [
   #  fish
   #];
@@ -36,7 +35,6 @@ in
       home.homeDirectory = "/home/${username2}";
       home.stateVersion = "22.11";
       programs.home-manager.enable = true;
-      initialPassword = initialPassword;
     };
   };
 
@@ -52,10 +50,11 @@ in
     description = name2;
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
+    initialPassword = "Newcomer2023";
     };
   };
 
-  users.users.root.initialPassword = initialPassword;
+  users.users.root.initialPassword = "MONkeyfook2893!!";
   # services.getty.autologinUser = "zell";
   nix.settings.allowed-users = [ "zell" ];
 }
