@@ -50,7 +50,7 @@ in
     description = name2;
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
-    initialPassword = "123";
+    hashedPassword = "$y$j9T$urOPleMCmjnCngOHJCnqL.$E4.SrQdy7JQmLrtxRTrG.I3BsmkYH1dC7aps5T/3fzD";
     };
   };
 
