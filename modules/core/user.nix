@@ -50,7 +50,7 @@ in
     description = name2;
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
-    initialPassword = "Newcomer2023";
+    initialPassword = "123";
     };
   };
 
