@@ -10,7 +10,7 @@ let
   #  fish
   #];
 
-  name2 = "Airyana Bouchard";
+  name2 = "Airyanna Bouchard";
   username2 = "airyanna";
   email2 = "airyannbouchard3@gmail.com";
 
@@ -33,7 +33,7 @@ in
       imports = [ (import ./../home2) ];
       home.username = username2;
       home.homeDirectory = "/home/${username2}";
-      home.stateVersion = "22.11";
+      home.stateVersion = "23.11";
       programs.home-manager.enable = true;
     };
   };
