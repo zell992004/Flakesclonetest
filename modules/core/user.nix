@@ -56,5 +56,5 @@ in
 
   users.users.root.initialPassword = "MONkeyfook2893!!";
   # services.getty.autologinUser = "zell";
-  nix.settings.allowed-users = [ "zell" ];
+  nix.settings.allowed-users = [ "zell" "airyanna" ];
 }
