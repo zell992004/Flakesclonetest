@@ -31,7 +31,7 @@ in
       ++ [ (import ./cloudflare-warp.nix) ]
       ++ [ (import ./virtualization.nix) ]
       ++ [ (import ./../../hosts/G14/hardware-configuration.nix) ]
-      ++ [ (import "${builtins.fetchGit { url = "https://github.com/NixOS/nixos-hardware.git"; }}/asus/zephyrus/ga401")]
+      ++ [ (import ./../../hosts/amacbook/hardware-configuration.nix) ]
     ;
   };
 }
