@@ -30,14 +30,14 @@ in
       home.stateVersion = "23.11";
       programs.home-manager.enable = true;
     };
-#  users.${username2} = {
-#      imports = [ (import ./../home2) ];
-#      home.username = username2;
-#      home.homeDirectory = "/home/${username2}";
-#      home.stateVersion = "22.11";
-#      programs.home-manager.enable = true;
-#      initialPassword = initialPassword;
-#    };
+  users.${username2} = {
+      imports = [ (import ./../home2) ];
+      home.username = username2;
+      home.homeDirectory = "/home/${username2}";
+      home.stateVersion = "22.11";
+      programs.home-manager.enable = true;
+      initialPassword = initialPassword;
+    };
   };
 
   users.users = {
