@@ -1,7 +1,6 @@
 { inputs
 , nixpkgs
 , self
-, nixos-hardware
 , ...
 }:
 let
@@ -32,8 +31,7 @@ in
       ++ [ (import ./cloudflare-warp.nix) ]
       ++ [ (import ./virtualization.nix) ]
       ++ [ (import ./../../hosts/G14/hardware-configuration.nix) ]
-      nixos-hardware.nixosModules.asus-zephyrus-ga401
-
+      ++ [ (import "${builtins.fetchGit { url = "https://github.com/NixOS/nixos-hardware.git"; }}/asus/zephyrus/ga401")]
     ;
   };
 }

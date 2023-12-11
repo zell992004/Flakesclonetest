@@ -7,7 +7,6 @@
     hyprpicker.url = "github:hyprwm/hyprpicker";
     alejandra.url = "github:kamadorueda/alejandra/3.0.0";
     #nix-gaming.url = "github:fufexan/nix-gaming";
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     hyprland = {
       url = "github:hyprwm/Hyprland";
       inputs.nixpkgs.follows = "nixpkgs";
