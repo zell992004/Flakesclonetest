@@ -1,6 +1,7 @@
 { inputs
 , nixpkgs
 , self
+, nixos-hardware
 , ...
 }:
 let
@@ -31,6 +32,8 @@ in
       ++ [ (import ./cloudflare-warp.nix) ]
       ++ [ (import ./virtualization.nix) ]
       ++ [ (import ./../../hosts/G14/hardware-configuration.nix) ]
+      nixos-hardware.nixosModules.asus-zephyrus-ga401
+
     ;
   };
 }
