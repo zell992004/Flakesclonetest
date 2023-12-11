@@ -14,7 +14,6 @@ let
   username2 = "airyanna";
   email2 = "airyannbouchard3@gmail.com";
 
-  #TODO setup home2 home-manager
 in
 {
   imports = [ inputs.home-manager.nixosModules.home-manager ];
